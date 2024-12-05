@@ -1,0 +1,60 @@
+body {
+  background-image: url("https://w0.peakpx.com/wallpaper/759/741/HD-wallpaper-digital-technology-background-with-zeros-and-ones-digital-blue-background-binary-code-background-digital-data-binary-code-texture.jpg");
+}
+.container {
+  margin-top: 50px;
+  background-color: #aacff7;
+  padding: 20px;
+  border-radius: 8px;
+}
+.result-card {
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.btn {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.shift-result {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out;
+}
+
+.valid {
+  background-color: #03bc2e;
+  color: white;
+}
+
+.invalid {
+  background-color: #b71223;
+  color: white;
+}
+
+.shift-number {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
